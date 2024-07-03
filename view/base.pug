@@ -1,0 +1,20 @@
+doctype html 
+html 
+    head 
+        title Dance Academy 
+        block scripts 
+        block style  
+    body 
+        nav#navbar.top 
+            div#logo 
+                img(src="../staticfolder/logo.png", alt="logo")
+                h4 Dance Academy 
+            ul
+                li #[a(href="/") Home ]
+                li #[a(href="/") About ]
+                li #[a(href="/") Services ]
+                li #[a(href="/") Class info ]
+                li #[a(href="/contact") Contact us ]
+        block content 
+        footer#footer
+            | Copyright 2024 Dance Academy || All rights are reserved

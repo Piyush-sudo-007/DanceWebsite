@@ -1,0 +1,42 @@
+extends base.pug 
+
+block scripts 
+    script(src='script.js')
+
+block style 
+    style 
+        include style.css 
+
+block content 
+    section#intro 
+        div Welcome to Dance Academy
+        div.small Eat - Dance - Repeat
+    section#mission 
+        h1 Our Mission 
+        hr
+        div#box
+            div.card 
+                div.img 
+                     img(src="../staticfolder/perfect.jpg", alt="..")
+                h3 Dance Perfection
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam earum inventore totam suscipit dolor eum, ab natus maxime ducimus perspiciatis!
+            div.card 
+                div.img 
+                    img(src="../staticfolder/cup.jpg", alt="..")
+                h3 National Champions
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam earum inventore totam suscipit dolor eum, ab natus maxime ducimus perspiciatis!
+            div.card 
+                div.img 
+                    img(src="../staticfolder/tradition.jpg", alt="..")
+                h3 Raising Our Culture 
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam earum inventore totam suscipit dolor eum, ab natus maxime ducimus perspiciatis!
+    section#sponsor 
+        h1 Our Sponsers 
+        hr
+        div#spimg 
+            img(src="../staticfolder/apple.png", alt="..")
+            img(src="../staticfolder/microsoft.png", alt="..")
+            img(src="../staticfolder/skype.png", alt="..")
+            img(src="../staticfolder/tesla.jpg", alt="..")
+            img(src="../staticfolder/benz.jpg", alt="..")
+    

@@ -1,0 +1,31 @@
+extends base.pug 
+block scripts 
+    script(src='script.js')
+
+block style 
+    style 
+        include style.css 
+        include contact.css 
+
+block content 
+    div.container
+        h1 Contact Us 
+        hr
+        form(action="/contact", method="post") 
+            div.reach 
+                h5 Name: 
+                input(type="text", name="Name", placeholder="Enter Your Name") 
+            div.reach 
+                h5 Email: 
+                input(type="email", name="Email", placeholder="Enter Your Email") 
+            div.reach 
+                h5 Phone Number: 
+                input(type="number", name="PhoneNumber", placeholder="Enter Your Phone Number") 
+            div.reach 
+                h5 Age: 
+                input(type="number", name="Age", placeholder="Enter Your Age") 
+            div.reach 
+                h5 Address: 
+                input(type="text", name="Address", placeholder="Enter Your Address") 
+            button.btn 
+                |submit 
